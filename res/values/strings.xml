@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, HangMan!</string>
+    <string name="app_name">HangMan</string>
+    <string name="letterclick">letterClick</string>
+    <string name="restart">restart</string>
+    <string name="category">Category</string>
+    <string name="won">Won</string>
+    <string name="lost">Lost</string>
+    <string name="selectcatinst">Select a category</string>
+
+</resources>

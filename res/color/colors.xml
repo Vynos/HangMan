@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="statBoardHeaderColor">#DDC1C240</color>
+    <color name="statTextColor">#DDFFFFFF</color>
+    <color name="buttonBackground">#00000000</color>
+</resources>

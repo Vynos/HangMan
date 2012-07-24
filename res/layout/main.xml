@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout android:orientation="vertical"
+                  android:background="@drawable/chalkbackground"
+                  android:layout_width="fill_parent"
+                  android:layout_height="0px"
+                  android:layout_weight="2">
+        <TableLayout android:orientation="horizontal"
+                     android:layout_width="fill_parent"
+                     android:layout_height="wrap_content"
+                     android:stretchColumns="*">
+            <TableRow>
+                <LinearLayout android:orientation="vertical"
+                              android:layout_width="fill_parent"
+                              android:layout_height="fill_parent">
+                    <TextView android:id="@+id/CategoryTitle"
+                              android:layout_width="fill_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_margin="5dp"
+                              android:textSize="18dp"
+                              android:textStyle="bold"
+                              android:gravity="center_horizontal"
+                              android:text="@string/category"
+                              android:textColor="#DDC1C240"/>
+                    <TextView android:id="@+id/Category"
+                              android:layout_width="fill_parent"
+                              android:layout_height="wrap_content"
+                              android:textSize="25dp"
+                              android:textStyle="bold"
+                              android:gravity="center_horizontal"
+                              android:layout_marginBottom="5dp"
+                              android:textColor="#DDFFFFFF"/>
+                </LinearLayout>                
+                <LinearLayout android:orientation="vertical" 
+                              android:layout_width="fill_parent" 
+                              android:layout_height="fill_parent" >
+                    <TextView android:id="@+id/WinTitle" 
+                              android:layout_width="fill_parent" 
+                              android:layout_height="wrap_content" 
+                              android:layout_margin="5dp" 
+                              android:textSize="18dp" 
+                              android:textStyle="bold" 
+                              android:gravity="center_horizontal" 
+                              android:text="@string/won" 
+                              android:textColor="#DDC1C240"/>"
+                    <TextView android:id="@+id/Win" 
+                              android:layout_width="fill_parent" 
+                              android:layout_height="wrap_content" 
+                              android:textSize="25dp" 
+                              android:textStyle="bold" 
+                              android:gravity="center_horizontal" 
+                              android:layout_marginBottom="5dp" 
+                              android:textColor="#DDFFFFFF"/>"
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" 
+                              android:layout_width="fill_parent" 
+                              android:layout_height="fill_parent" >
+                    <TextView android:id="@+id/LossTitle" 
+                              android:layout_width="fill_parent" 
+                              android:layout_height="wrap_content" 
+                              android:layout_margin="5dp" 
+                              android:textSize="18dp" 
+                              android:textStyle="bold" 
+                              android:gravity="center_horizontal" 
+                              android:text="@string/lost" 
+                              android:textColor="#DDC1C240"/>"
+                    <TextView android:id="@+id/Loss" 
+                              android:layout_width="fill_parent" 
+                              android:layout_height="wrap_content" 
+                              android:textStyle="bold" 
+                              android:textSize="25dp" 
+                              android:gravity="center_horizontal" 
+                              android:layout_marginBottom="5dp" 
+                              android:textColor="#DDFFFFFF"/>"
+                </LinearLayout>                
+            </TableRow>
+        </TableLayout>
+        <ImageView android:layout_marginTop="10dp"
+                   android:id="@+id/HangManImage" 
+                   android:layout_width="fill_parent" 
+                   android:layout_height="wrap_content"/> 
+        <TextView android:id="@+id/GuessedLetters" 
+                  android:textStyle="bold" 
+                  android:layout_width="fill_parent" 
+                  android:layout_height="wrap_content" 
+                  android:layout_margin="5dp" 
+                  android:textSize="32dp"
+                  android:gravity="center_horizontal"
+                  android:textColor="#DDFFFFFF" />
+    </LinearLayout>
+    <TableLayout android:id="@+id/GridAlphabet" android:layout_width="fill_parent" android:layout_height="0px" android:background="#656565" android:gravity="bottom" android:layout_weight="1" android:stretchColumns="*">
+        <TableRow android:layout_marginBottom="5dp">
+            <Button android:layout_width="fill_parent" android:id="@+id/btnA" android:text="a" android:textSize="8dp" android:textColor="@android:color/transparent" android:background="@drawable/a_selector" android:layout_height="fill_parent" android:onClick="@string/letterclick" /> 
+            <Button android:layout_width="fill_parent" android:id="@+id/btnB" android:text="b" android:textSize="8dp" android:textColor="@android:color/transparent" android:background="@drawable/b_selector" android:layout_height="fill_parent" android:onClick="@string/letterclick" /> 
+            <Button android:layout_width="fill_parent" android:id="@+id/btnC" android:text="c" android:textSize="8dp" android:textColor="@android:color/transparent" android:background="@drawable/c_selector" android:layout_height="fill_parent" android:onClick="@string/letterclick" /> 
+            <Button android:layout_width="fill_parent" android:id="@+id/btnD" android:text="d" android:textSize="8dp" android:textColor="@android:color/transparent" android:background="@drawable/d_selector" android:layout_height="fill_parent" android:onClick="@string/letterclick" /> 
+            <Button android:layout_width="fill_parent" android:id="@+id/btnE" android:text="e" android:textSize="8dp" android:textColor="@android:color/transparent" android:background="@drawable/e_selector" android:layout_height="fill_parent" android:onClick="@string/letterclick" /> 
+            <Button android:layout_width="fill_parent" android:id="@+id/btnF" android:text="f" android:textSize="8dp" android:textColor="@android:color/transparent" android:background="@drawable/f_selector" android:layout_height="fill_parent" android:onClick="@string/letterclick" /> 
+            <Button android:layout_width="fill_parent" android:id="@+id/btnG" android:text="g" android:textSize="8dp" android:textColor="@android:color/transparent" android:background="@drawable/g_selector" android:layout_height="fill_parent" android:onClick="@string/letterclick" /> 
+        </TableRow>
+        <TableRow android:layout_marginBottom="5dp">
+            <Button android:layout_width="fill_parent" android:id="@+id/btnH" android:text="h" android:textSize="8dp" android:textColor="@android:color/transparent" android:background="@drawable/h_selector" android:layout_height="fill_parent" android:onClick="@string/letterclick" /> 
+            <Button android:layout_width="fill_parent" android:id="@+id/btnI" android:text="i" android:textSize="8dp" android:textColor="@android:color/transparent" android:background="@drawable/i_selector" android:layout_height="fill_parent" android:onClick="@string/letterclick" /> 
+            <Button android:layout_width="fill_parent" android:id="@+id/btnJ" android:text="j" android:textSize="8dp" android:textColor="@android:color/transparent" android:background="@drawable/j_selector" android:layout_height="fill_parent" android:onClick="@string/letterclick" /> 
+            <Button android:layout_width="fill_parent" android:id="@+id/btnK" android:text="k" android:textSize="8dp" android:textColor="@android:color/transparent" android:background="@drawable/k_selector" android:layout_height="fill_parent" android:onClick="@string/letterclick" /> 
+            <Button android:layout_width="fill_parent" android:id="@+id/btnL" android:text="l" android:textSize="8dp" android:textColor="@android:color/transparent" android:background="@drawable/l_selector" android:layout_height="fill_parent" android:onClick="@string/letterclick" /> 
+            <Button android:layout_width="fill_parent" android:id="@+id/btnM" android:text="m" android:textSize="8dp" android:textColor="@android:color/transparent" android:background="@drawable/m_selector" android:layout_height="fill_parent" android:onClick="@string/letterclick" /> 
+            <Button android:layout_width="fill_parent" android:id="@+id/btnN" android:text="n" android:textSize="8dp" android:textColor="@android:color/transparent" android:background="@drawable/n_selector" android:layout_height="fill_parent" android:onClick="@string/letterclick" /> 
+        </TableRow>
+        <TableRow android:layout_marginBottom="5dp">
+            <Button android:layout_width="fill_parent" android:id="@+id/btnO" android:text="o" android:textSize="8dp" android:textColor="@android:color/transparent" android:background="@drawable/o_selector" android:layout_height="fill_parent" android:onClick="@string/letterclick" /> 
+            <Button android:layout_width="fill_parent" android:id="@+id/btnP" android:text="p" android:textSize="8dp" android:textColor="@android:color/transparent" android:background="@drawable/p_selector" android:layout_height="fill_parent" android:onClick="@string/letterclick" /> 
+            <Button android:layout_width="fill_parent" android:id="@+id/btnQ" android:text="q" android:textSize="8dp" android:textColor="@android:color/transparent" android:background="@drawable/q_selector" android:layout_height="fill_parent" android:onClick="@string/letterclick" /> 
+            <Button android:layout_width="fill_parent" android:id="@+id/btnR" android:text="r" android:textSize="8dp" android:textColor="@android:color/transparent" android:background="@drawable/r_selector" android:layout_height="fill_parent" android:onClick="@string/letterclick" /> 
+            <Button android:layout_width="fill_parent" android:id="@+id/btnS" android:text="s" android:textSize="8dp" android:textColor="@android:color/transparent" android:background="@drawable/s_selector" android:layout_height="fill_parent" android:onClick="@string/letterclick" /> 
+            <Button android:layout_width="fill_parent" android:id="@+id/btnT" android:text="t" android:textSize="8dp" android:textColor="@android:color/transparent" android:background="@drawable/t_selector" android:layout_height="fill_parent" android:onClick="@string/letterclick" /> 
+            <Button android:layout_width="fill_parent" android:id="@+id/btnU" android:text="u" android:textSize="8dp" android:textColor="@android:color/transparent" android:background="@drawable/u_selector" android:layout_height="fill_parent" android:onClick="@string/letterclick" /> 
+        </TableRow>
+        <TableRow android:layout_marginBottom="5dp">
+            <Button android:layout_width="fill_parent" android:background="#00000000" android:layout_height="fill_parent" /> 
+            <Button android:layout_width="fill_parent" android:id="@+id/btnV" android:text="v" android:textSize="8dp" android:textColor="@android:color/transparent" android:background="@drawable/v_selector" android:layout_height="fill_parent" android:onClick="@string/letterclick" /> 
+            <Button android:layout_width="fill_parent" android:id="@+id/btnW" android:text="w" android:textSize="8dp" android:textColor="@android:color/transparent" android:background="@drawable/w_selector" android:layout_height="fill_parent" android:onClick="@string/letterclick" /> 
+            <Button android:layout_width="fill_parent" android:id="@+id/btnX" android:text="x" android:textSize="8dp" android:textColor="@android:color/transparent" android:background="@drawable/x_selector" android:layout_height="fill_parent" android:onClick="@string/letterclick" /> 
+            <Button android:layout_width="fill_parent" android:id="@+id/btnY" android:text="y" android:textSize="8dp" android:textColor="@android:color/transparent" android:background="@drawable/y_selector" android:layout_height="fill_parent" android:onClick="@string/letterclick" /> 
+            <Button android:layout_width="fill_parent" android:id="@+id/btnZ" android:text="z" android:textSize="8dp" android:textColor="@android:color/transparent" android:background="@drawable/z_selector" android:layout_height="fill_parent" android:onClick="@string/letterclick" /> 
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
